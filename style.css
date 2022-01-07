@@ -91,3 +91,7 @@ html {
 	bottom: 2rem !important;
 	transform: translateY(0px);
 }
+
+#fp-nav ul li .fp-tooltip {
+	text-transform: capitalize;
+}
