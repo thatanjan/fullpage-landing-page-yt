@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.slide {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.section.one .slide.one {
+	background-image: url(media/taylor_swift.jpg);
+}
+
+.section.two .slide.one {
+	background-image: url(media/fearless/1.jpg);
+}
+
+.section.two .slide.two {
+	background-image: url(media/fearless/2.jpg);
+}
+
+.section.two .slide.three {
+	background-image: url(media/fearless/3.jpg);
+}
+
+.section.three .slide.one {
+	background-image: url(media/red/1.jpg);
+}
+
+
+.section:after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.6;
+	z-index: 5;
+}
+
+.title {
+	font-size: 12rem;
+	text-align: center;
+	color: white;
+	font-family: Kalam, cursive;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	width: 70%;
+	text-transform: capitalize;
+	padding: 2rem;
+}
+
+.fp-controlArrow.fp-next {
+	background-image: url(media/icons/right_arrow.png);
+}
+
+.fp-controlArrow.fp-prev {
+	background-image: url(media/icons/left_arrow.png);
+}
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+	height: 10rem;
+	z-index: 10;
+	width: 6rem !important;
+	border: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background-color:white !important;
+}
+
+#fp-nav.fp-right {
+	top:auto;
+	bottom: 2rem !important;
+	transform: translateY(0px);
+}
